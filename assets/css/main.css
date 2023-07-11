@@ -2271,3 +2271,45 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+.resume-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #0056b3;
+}
+
+.resume-button span {
+  position: relative;
+}
+
+.resume-button span:after {
+  content: '\f019';
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.resume-button span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.resume-button:hover span:before {
+  background-color: #e5e5e5;
+}
